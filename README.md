@@ -27,7 +27,7 @@ Usually you should pick a wavenet model when available.
 To get a list of possible models you can call the following endpoint (Access token should be the token retrieved from Authorization chapter):
 `curl -H "Authorization: Bearer $ACCESS_TOKEN" 'https://audiodescription.citizenjournalist.io/api/audio-models?page=0&size=10000'`
 
-For a list of available audio models check [here](#available-audio-models)
+For a list of available audio models check [end](#available-audio-models) of this article
 
 # Audio Description API
 Now in order to synthesize a text following api can be used (Access token should be the token retrieved from Authorization chapter).
