@@ -27,7 +27,7 @@ Usually you should pick a wavenet model when available.
 To get a list of possible models you can call the following endpoint (Access token should be the token retrieved from Authorization chapter):
 `curl -H "Authorization: Bearer $ACCESS_TOKEN" 'https://audiodescription.citizenjournalist.io/api/audio-models?page=0&size=10000'`
 
-TODO Table of audio models
+For a list of available audio models check [here](#available-audio-models)
 
 # Audio Description API
 Now in order to synthesize a text following api can be used (Access token should be the token retrieved from Authorization chapter).
@@ -71,9 +71,94 @@ You can adjust the theme by replacing the theme paramer with dark. At the moment
 
 # UI
 Beyond the API there is also the ui reachable at 
-https://as.citizenjournalist.io 
+<https://as.citizenjournalist.io>
 There you can play around and create audio descriptions and translation with the web interface. After login just go to the menu at entities -> Audio Description.
 
+# Available Audio Models
 
-
-
+| id   | name             | language   | gender | modelName        |
+| ---- | ---------------- | ---------- | ------ | ---------------- |
+| 1    | English (F)      | ENGLISH    | FEMALE | en-US-Wavenet-F  |
+| 2    | German (F)       | GERMAN     | FEMALE | de-DE-Wavenet-F  |
+| 3    | French (F)       | FRENCH     | FEMALE | fr-FR-Wavenet-E  |
+| 4    | Italian (F)      | ITALIAN    | FEMALE | it-IT-Wavenet-B  |
+| 5    | Spanish (F)      | SPANISH    | FEMALE | es-ES-Wavenet-C  |
+| 6    | Catalan (F)      | CATALAN    | FEMALE | ca-es-Standard-A |
+| 7    | Ukrainian (F)    | UKRAINIAN  | FEMALE | uk-UA-Wavenet-A  |
+| 1001 | English-H (F)    | ENGLISH    | FEMALE | en-US-Wavenet-H  |
+| 1002 | English-G (F)    | ENGLISH    | FEMALE | en-US-Wavenet-G  |
+| 1003 | English-B (M)    | ENGLISH    | MALE   | en-US-Wavenet-B  |
+| 1004 | English-C (F)    | ENGLISH    | FEMALE | en-US-Wavenet-C  |
+| 1005 | English-I (M)    | ENGLISH    | MALE   | en-US-Wavenet-I  |
+| 1006 | English-A (M)    | ENGLISH    | MALE   | en-US-Neural2-A  |
+| 1007 | English-E (F)    | ENGLISH    | FEMALE | en-US-Wavenet-E  |
+| 1008 | English-A (M)    | ENGLISH    | MALE   | en-US-Wavenet-A  |
+| 1009 | English-J (M)    | ENGLISH    | MALE   | en-US-Wavenet-J  |
+| 1010 | German-A (F)     | GERMAN     | FEMALE | de-DE-Wavenet-A  |
+| 1011 | English-D (M)    | ENGLISH    | MALE   | en-US-Wavenet-D  |
+| 1012 | English-F (F)    | ENGLISH    | FEMALE | en-US-Neural2-F  |
+| 1013 | German-E (M)     | GERMAN     | MALE   | de-DE-Wavenet-E  |
+| 1014 | French-A (F)     | FRENCH     | FEMALE | fr-FR-Wavenet-A  |
+| 1015 | Italian-C (M)    | ITALIAN    | MALE   | it-IT-Wavenet-C  |
+| 1016 | German-C (F)     | GERMAN     | FEMALE | de-DE-Wavenet-C  |
+| 1017 | Italian-D (M)    | ITALIAN    | MALE   | it-IT-Wavenet-D  |
+| 1018 | German-B (M)     | GERMAN     | MALE   | de-DE-Wavenet-B  |
+| 1019 | Spanish-D (F)    | SPANISH    | FEMALE | es-ES-Wavenet-D  |
+| 1020 | Spanish-B (M)    | SPANISH    | MALE   | es-ES-Wavenet-B  |
+| 1021 | German-D (M)     | GERMAN     | MALE   | de-DE-Wavenet-D  |
+| 1022 | French-D (M)     | FRENCH     | MALE   | fr-FR-Wavenet-D  |
+| 1023 | French-C (F)     | FRENCH     | FEMALE | fr-FR-Wavenet-C  |
+| 1024 | French-B (M)     | FRENCH     | MALE   | fr-FR-Wavenet-B  |
+| 1025 | Italian-A (F)    | ITALIAN    | FEMALE | it-IT-Wavenet-A  |
+| 1026 | English-C (F)    | ENGLISH    | FEMALE | en-US-Neural2-C  |
+| 1027 | English-D (M)    | ENGLISH    | MALE   | en-US-Neural2-D  |
+| 1028 | English-E (F)    | ENGLISH    | FEMALE | en-US-Neural2-E  |
+| 1029 | English-G (F)    | ENGLISH    | FEMALE | en-US-Neural2-G  |
+| 1030 | English-I (M)    | ENGLISH    | MALE   | en-US-Neural2-I  |
+| 1031 | English-H (F)    | ENGLISH    | FEMALE | en-US-Neural2-H  |
+| 1032 | English-J (M)    | ENGLISH    | MALE   | en-US-Neural2-J  |
+| 1033 | German-F (F)     | GERMAN     | FEMALE | de-DE-Neural2-F  |
+| 1034 | German-D (M)     | GERMAN     | MALE   | de-DE-Neural2-D  |
+| 1035 | French-A (F)     | FRENCH     | FEMALE | fr-FR-Neural2-A  |
+| 1036 | French-B (M)     | FRENCH     | MALE   | fr-FR-Neural2-B  |
+| 1037 | French-C (F)     | FRENCH     | FEMALE | fr-FR-Neural2-C  |
+| 1038 | French-D (M)     | FRENCH     | MALE   | fr-FR-Neural2-D  |
+| 1039 | French-E (F)     | FRENCH     | FEMALE | fr-FR-Neural2-E  |
+| 1040 | Japanese-C (M)   | JAPANESE   | MALE   | ja-JP-Wavenet-C  |
+| 1041 | Arabic-A (F)     | ARABIC     | FEMALE | ar-XA-Wavenet-A  |
+| 1042 | Arabic-C (M)     | ARABIC     | MALE   | ar-XA-Wavenet-C  |
+| 1043 | Portuguese-A (F) | PORTUGUESE | FEMALE | pt-PT-Wavenet-A  |
+| 1044 | Portuguese-B (M) | PORTUGUESE | MALE   | pt-PT-Wavenet-B  |
+| 1045 | Portuguese-D (F) | PORTUGUESE | FEMALE | pt-PT-Wavenet-D  |
+| 1046 | Japanese-D (M)   | JAPANESE   | MALE   | ja-JP-Wavenet-D  |
+| 1047 | Japanese-A (F)   | JAPANESE   | FEMALE | ja-JP-Wavenet-A  |
+| 1048 | Arabic-D (F)     | ARABIC     | FEMALE | ar-XA-Wavenet-D  |
+| 1049 | Portuguese-C (M) | PORTUGUESE | MALE   | pt-PT-Wavenet-C  |
+| 1050 | Japanese-B (F)   | JAPANESE   | FEMALE | ja-JP-Wavenet-B  |
+| 1051 | Chinese-C (M)    | CHINESE    | MALE   | cmn-CN-Wavenet-C |
+| 1052 | Chinese-B (M)    | CHINESE    | MALE   | cmn-CN-Wavenet-B |
+| 1053 | Russian-A (F)    | RUSSIAN    | FEMALE | ru-RU-Wavenet-A  |
+| 1054 | Chinese-D (F)    | CHINESE    | FEMALE | cmn-CN-Wavenet-D |
+| 1055 | Russian-B (M)    | RUSSIAN    | MALE   | ru-RU-Wavenet-B  |
+| 1056 | Arabic-B (M)     | ARABIC     | MALE   | ar-XA-Wavenet-B  |
+| 1057 | Russian-D (M)    | RUSSIAN    | MALE   | ru-RU-Wavenet-D  |
+| 1058 | Chinese-A (F)    | CHINESE    | FEMALE | cmn-CN-Wavenet-A |
+| 1059 | Russian-C (F)    | RUSSIAN    | FEMALE | ru-RU-Wavenet-C  |
+| 1060 | Russian-E (F)    | RUSSIAN    | FEMALE | ru-RU-Wavenet-E  |
+| 1061 | English-K (F)    | ENGLISH    | FEMALE | en-US-News-K     |
+| 1062 | English-L (F)    | ENGLISH    | FEMALE | en-US-News-L     |
+| 1063 | English-M (M)    | ENGLISH    | MALE   | en-US-News-M     |
+| 1064 | English-N (M)    | ENGLISH    | MALE   | en-US-News-N     |
+| 1065 | Italian-A (F)    | ITALIAN    | FEMALE | it-IT-Neural2-A  |
+| 1066 | Spanish-B (M)    | SPANISH    | MALE   | es-ES-Neural2-B  |
+| 1067 | Italian-C (M)    | ITALIAN    | MALE   | it-IT-Neural2-C  |
+| 1068 | Spanish-F (M)    | SPANISH    | MALE   | es-ES-Neural2-F  |
+| 1069 | Spanish-A (F)    | SPANISH    | FEMALE | es-ES-Neural2-A  |
+| 1070 | Spanish-D (F)    | SPANISH    | FEMALE | es-ES-Neural2-D  |
+| 1071 | Spanish-C (F)    | SPANISH    | FEMALE | es-ES-Neural2-C  |
+| 1072 | Spanish-E (F)    | SPANISH    | FEMALE | es-ES-Neural2-E  |
+| 1075 | Japanese-B (F)   | JAPANESE   | FEMALE | ja-JP-Neural2-B  |
+| 1074 | Japanese-C (M)   | JAPANESE   | MALE   | ja-JP-Neural2-C  |
+| 1073 | Japanese-D (M)   | JAPANESE   | MALE   | ja-JP-Neural2-D  |
+| 1076 | English-O (F)    | ENGLISH    | FEMALE | en-US-Studio-O   |
+| 1077 | English-M (M)    | ENGLISH    | MALE   | en-US-Studio-M   |
