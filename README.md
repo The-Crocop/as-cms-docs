@@ -11,10 +11,14 @@ In order to access the api you first will need an authentication token.
 This can be retrieved via Open ID Connect Client Credentials flow.
 After you have received your client credentials you can use them like this:
 
-`curl -u <client_id>:<client_secret> -d 'grant_type=client_credentials'  https://dev-64698101.okta.com/oauth2/default/v1/token`
+```
+curl -u <client_id>:<client_secret> -d 'grant_type=client_credentials'  https://dev-64698101.okta.com/oauth2/default/v1/token
+```
 
 The response looks like this:
-`{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ....","scope":"audio-descriptions"}`
+```
+{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ....","scope":"audio-descriptions"}
+```
 
 For the following Requests the access_token field from the response can be used as Authorization Header.
 
@@ -25,7 +29,9 @@ For most of the languages there is female and male voices to choose from.
 Usually you should pick a wavenet model when available.
 
 To get a list of possible models you can call the following endpoint (Access token should be the token retrieved from Authorization chapter):
-`curl -H "Authorization: Bearer $ACCESS_TOKEN" 'https://audiodescription.citizenjournalist.io/api/audio-models?page=0&size=10000'`
+```
+curl -H "Authorization: Bearer $ACCESS_TOKEN" 'https://audiodescription.citizenjournalist.io/api/audio-models?page=0&size=10000'
+```
 
 For a list of available audio models check [end](#available-audio-models) of this article
 
@@ -61,7 +67,7 @@ The result looks like this:
 The id can be used to pass to the embeddable player.
 
 # The Player
-<Link to a player image>
+![Player Image](player.png)
  To make use of the automatic audio description you should use our embedded player. Just use the embed code below into your website and replace the id field with the one from the response.
 
 ```
