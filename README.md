@@ -67,9 +67,7 @@ The result looks like this:
 The id can be used to pass to the embeddable player.
 
 # The Player
-![Player Image](player.png)
-
-<div style="height: 0; max-width: 410px; position: relative; padding-bottom: 62px;"><iframe src="https://as.citizenjournalist.io/audio-description/1054/player?embedded=true&theme=light" scrolling="no" style="border: none; overflow: hidden; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowtransparency="true"></iframe></div>
+[![Player Image](player.png)](https://as.citizenjournalist.io/audio-description/1054/player?embedded=true&theme=light)
 
  To make use of the automatic audio description you should use our embedded player. Just use the embed code below into your website and replace the id field with the one from the response.
 
